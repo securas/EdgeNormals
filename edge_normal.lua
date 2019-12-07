@@ -97,7 +97,7 @@ if img.colorMode == ColorMode.RGB then
 				-- process pixels that have a valid direction
 				local normalization = math.sqrt( x_dir * x_dir + y_dir * y_dir + height * height )
 				x_dir = x_dir / normalization
-				y_dir = y_dir / normalization
+				y_dir = -y_dir / normalization
 				if data.Invert_Y then
 					y_dir = -y_dir
 				end
